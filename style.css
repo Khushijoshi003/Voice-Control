@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fa;
+  margin: 0;
+  padding: 20px;
+  min-width: 250px;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+button#start {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button#start:hover {
+  background: #388e3c;
+}
+
+#status {
+  margin-top: 18px;
+  color: #444;
+  font-size: 0.98em;
+  line-height: 1.5;
+  background: #e8f5e9;
+  border-radius: 4px;
+  padding: 10px;
+}
