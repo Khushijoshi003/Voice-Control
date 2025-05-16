@@ -1,78 +1,127 @@
-# Voice-Control
-🎤 Video Voice Controller Chrome Extension
-Control YouTube videos with your voice—no hands, no hassle!
-Just say what you want, and let the extension do the work.
-Minimal UI, maximum chill. 😎
+Absolutely! Here’s a relaxed, easy-to-read README.md for your Chrome extension, covering all features, setup, and usage. You can copy-paste this into your repo. If you want to tweak the tone or add/remove anything, just let me know! 🚀
 
-🚀 Features
-🎤 Voice Commands:
-Play, pause, mute, unmute, change volume, adjust speed, loop, toggle subtitles, fullscreen, and even take screenshots—just by speaking.
+---
 
-🖱️ Minimal UI:
-One button: “Start Listening.” That’s it.
+# 🎤 Video Voice Controller Chrome Extension
 
-📷 Screenshot:
-Say “screenshot” to save the current frame.
+Control your YouTube videos and open your favorite websites using just your voice. No more clicking around—just say what you want, and let your browser do the rest!
 
-🔄 Loop/Repeat:
-Enable or disable loop mode with your voice.
+---
 
-📝 Subtitle/Caption Toggle:
-Show or hide subtitles/captions hands-free.
+## 🚀 Features
 
-💡 Brightness Control:
-Say “brighter” or “dimmer” to adjust video brightness.
+- **🎬 Video Controls (on YouTube):**
+  - “Pause” / “Play”
+  - “Slower” / “Faster” / “Increase speed” / “Decrease speed”
+  - “Mute” / “Unmute”
+  - “Volume [number]” (e.g., “volume 50”)
+  - “Fullscreen”
+  - “Screenshot” (takes a snapshot of the video)
+  - “Brighter” / “Darker” / “Dimmer”
+  - “Loop” / “No loop”
+  - “Show subtitles” / “Hide subtitles”
+  - “Speed [number]” (e.g., “speed 1.5”)
 
-🖥️ Fullscreen:
-Go fullscreen by just saying so.
+- **🌐 Open Websites Instantly:**
+  - “Open instagram”
+  - “Open gfg os notes”
+  - “Open leetcode”
+  - “Open github”
+  - “Open youtube”
+  - “Open striver binary search playlist”
+  - ...and more! (You can add custom keywords in the code.)
 
-⚡ Quick Setup:
-Easy install, no extra permissions beyond YouTube.
+- **🔎 Smart Search:**
+  - If you say “open [something]” and it’s not a custom keyword, it will search YouTube for you!
 
-🕒 Continuous Listening:
-Keeps listening for new commands automatically.
+- **🗣️ Continuous Voice Listening:**
+  - Just click “Start Listening” in the popup and give your commands—no need to keep clicking.
 
+---
 
-🛠️ Installation
-Download or clone this repo.
-Go to chrome://extensions/ in Chrome.
-Enable Developer mode (top right).
-Click Load unpacked and select this folder.
-Pin the extension for easy access.
+## 🛠️ How to Install
 
-🎬 How to Use
-Open any YouTube video.
-Click the extension icon.
-Hit “Start Listening.”
-Speak your command (e.g., “pause”, “play”, “mute”, “fullscreen”, “screenshot”, etc.).
-Watch the magic happen!
-Sample Commands:
+1. **Download or Clone the Repo**
+   ```bash
+   git clone https://github.com/Khushijoshi003/Voice-Control.git
+   ```
 
-“pause”
-“play”
-“mute” / “unmute”
-“volume 50”
-“speed 1.25”
-“loop” / “no loop”
-“subtitle”
-“fullscreen”
-“screenshot”
-“brighter” / “dimmer”
+2. **Open Chrome and Go to Extensions**
+   - Visit `chrome://extensions/`
+   - Enable “Developer mode” (top right)
 
-🧑‍💻 How it Works
-Uses the browser’s built-in speech recognition.
-Sends your command to the video player on the page.
-No data leaves your browser. Privacy-friendly!
+3. **Load Unpacked Extension**
+   - Click “Load unpacked”
+   - Select the folder where you downloaded/cloned the extension
 
-📝 Notes
-Works best on YouTube.
-For screenshot, the image will be saved as a PNG.
-If speech recognition fails, just click “Start Listening” again.
-Some features (like quality change) aren’t supported due to YouTube limitations.
+4. **Ready to Go!**
+   - You’ll see the extension icon in your Chrome bar.
 
-🤔 Troubleshooting
-If the extension isn’t working, refresh the YouTube page and try again.
-Make sure your microphone is enabled for Chrome.
-Check the console for errors (right-click, Inspect, Console).
+---
 
+## 🤖 How to Use
 
+1. **Open YouTube or Any Supported Website**
+2. **Click the Extension Icon**
+3. **Hit “Start Listening”**
+4. **Speak Your Command**
+   - Example: “Pause”, “Open instagram”, “Volume 80”, “Open gfg os notes”, “Screenshot”, etc.
+
+**Tip:** You can add more custom keywords and URLs in the code if you want to open more sites!
+
+---
+
+## 📝 Customizing Keywords
+
+Want to add your own commands?  
+Just edit the `CUSTOM_URLS` object in `content.js`:
+
+```js
+const CUSTOM_URLS = {
+  "instagram": "https://www.instagram.com",
+  "gfg os notes": "https://www.geeksforgeeks.org/operating-system-notes-set-1-introduction/",
+  // Add more like this:
+  "my blog": "https://myblog.com"
+};
+```
+
+---
+
+## 🧪 Testing Checklist
+
+- [ ] Voice commands work for video controls on YouTube
+- [ ] “Open [site]” commands open the correct websites
+- [ ] Custom keywords open your chosen pages
+- [ ] YouTube search fallback works for unknown commands
+- [ ] Screenshot feature works on YouTube videos
+- [ ] Extension keeps listening after each command
+
+---
+
+## 🙋 FAQ
+
+**Q: Can I control sites other than YouTube?**  
+A: You can open any site with a custom keyword, but video controls are only on YouTube (for now).
+
+**Q: Do I need to keep Chrome open?**  
+A: Yes! The extension works when Chrome is open and the extension is loaded.
+
+**Q: Can I add more sites?**  
+A: Absolutely—just add them to `CUSTOM_URLS` in the code.
+
+---
+
+## 💡 Credits
+
+Made with patience, curiosity, and a bit of fun by [Khushi Joshi](https://github.com/Khushijoshi003).
+
+---
+
+Ready to give your voice the power? Try it out and enjoy hands-free browsing! 😎🎤
+
+---
+
+Want to add or change anything? Just ask!  
+#-#-#[easy action start]
+{"easy_action":"selector","data": ["Looks great, I’ll use this!", "Add more usage examples", "Make it even shorter", "Add troubleshooting tips"]}
+[easy action end]#-#-#
