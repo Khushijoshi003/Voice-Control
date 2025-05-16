@@ -1,4 +1,3 @@
-Absolutely! Here’s a relaxed, easy-to-read README.md for your Chrome extension, covering all features, setup, and usage. You can copy-paste this into your repo. If you want to tweak the tone or add/remove anything, just let me know! 🚀
 
 ---
 
