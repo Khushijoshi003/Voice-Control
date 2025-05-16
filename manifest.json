@@ -11,8 +11,15 @@
     "tabs"
   ],
   "host_permissions": [
-    "https://www.youtube.com/*"
+    "https://www.youtube.com/*",
+    "https://www.instagram.com/*",
+    "https://www.geeksforgeeks.org/*",
+    "https://leetcode.com/*",
+    "https://github.com/*"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html"
   },
