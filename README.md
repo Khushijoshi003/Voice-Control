@@ -1,4 +1,4 @@
-WhisperPilot
+WHISPER PILOT
 ---
 
 # 🎤 Video Voice Controller Chrome Extension
