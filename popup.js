@@ -5,4 +5,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("status").textContent = "Listening... Speak your command!";
     });
   });
-})
+});
