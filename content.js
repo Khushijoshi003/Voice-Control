@@ -139,4 +139,4 @@ chrome.runtime.onMessage.addListener((msg) => {
   if (msg.action === "start-listening" && !isListening) {
     startListeningLoop();
   }
-}
+});
